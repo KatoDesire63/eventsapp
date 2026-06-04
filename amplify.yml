@@ -1,0 +1,16 @@
+version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - npm install
+        - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
+frontend:
+  phases:
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next # Change this to 'dist' or 'build' if you are using Vite/React instead of Next.js
+    files:
+      - '**/*'
