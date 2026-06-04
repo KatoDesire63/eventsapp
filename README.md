@@ -18,3 +18,22 @@ If you are developing a production application, we recommend using TypeScript wi
 =======
 # eventsapp
 >>>>>>> 0b12305bf12167a4cee15bf39f605d8926467066
+
+# Event Recommendation App
+
+## Installation
+npm install
+
+## Start Project
+npm start
+
+## Technologies Used
+- React
+- AWS Amplify
+- Git
+
+## Features
+- User Authentication
+- Event Recommendations
+- Responsive UI
+- Cloud Integration
