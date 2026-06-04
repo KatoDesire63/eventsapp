@@ -3,7 +3,7 @@ backend:
   phases:
     build:
       commands:
-        - npm install
+        - npm install --legacy-peer-deps
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
@@ -11,6 +11,6 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: .next # Change this to 'dist' or 'build' if you are using Vite/React instead of Next.js
+    baseDirectory: .next
     files:
       - '**/*'
