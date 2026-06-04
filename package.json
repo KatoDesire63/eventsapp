@@ -54961,6 +54961,7 @@
     "@aws-amplify/backend-cli": "^1.8.3",
     "aws-cdk": "^2.1126.0",
     "aws-cdk-lib": "^2.257.0",
+    "constructs": "^10.6.0",
     "esbuild": "^0.28.0"
   },
   "dependencies": {
